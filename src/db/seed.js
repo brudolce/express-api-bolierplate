@@ -1,5 +1,6 @@
 const DatabaseConnection = require('./connection.js');
-const Diensleister = require('../models/Dienstleister.js');
+//change your model down here
+const User = require('../models/User.js');
 const mongoose = require('mongoose');
 
 
@@ -7,12 +8,13 @@ DatabaseConnection()
 
 const data = [
   {
-    //your model here
+    //your data here
   },
   
 ];
 
-Diensleister.create(data, (err) => {
+//change your model const down here from 'User' to the desired model
+User.create(data, (err) => {
   if (err) {
     throw (err);
   }
