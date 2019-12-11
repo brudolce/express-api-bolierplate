@@ -50,7 +50,7 @@ app.use(bodyParser.json());
 
 //test script on home page
 app.get('/', (req,res)=>{
-  res.send('Emmora - I am working!')
+  res.send('I am working!')
 })
 
 // Requiring Endpoints
